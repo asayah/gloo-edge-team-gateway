@@ -6,8 +6,10 @@ Guide to install Gloo Edge control plane in one namespace and the gateway in a d
 ```   
     gateway:
       readGatewaysFromAllNamespaces: true 
-      ```
+```
 by default it is set to false
+
+
 3- create the a different namespace for your team, in this example I call it alpha, then apply the attached manifest,
 ```
 kubectl apply -f gateway-alpha-full.yaml -n alpha
